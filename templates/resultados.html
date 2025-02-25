@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="/images/psychology_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-card">
+        <h1>Resultados de tu análisis vocacional</h1>
+
+        <div class="results-container">
+          {% set first = true %} {% for carrera, datos in resultados.items() %}
+          <div class="career-card {% if first %}top-career{% endif %}">
+            <div class="career-title">
+              <h3 class="career-name">{{ carrera }}</h3>
+              <span class="compatibility"
+                >{{ datos.compatibilidad }}% compatible</span
+              >
+            </div>
+
+            <p class="career-description">{{ datos.descripcion }}</p>
+
+            <div class="career-details">
+              <h4>Áreas de especialización</h4>
+              <div class="tag-list">
+                {% for area in datos.areas %}
+                <span class="tag">{{ area }}</span>
+                {% endfor %}
+              </div>
+
+              <h4>Habilidades requeridas</h4>
+              <div class="tag-list">
+                {% for habilidad in datos.habilidades_requeridas %}
+                <span class="tag">{{ habilidad }}</span>
+                {% endfor %}
+              </div>
+
+              <h4>Campo laboral</h4>
+              <div class="tag-list">
+                {% for campo in datos.campo_laboral %}
+                <span class="tag">{{ campo }}</span>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% if first %} {% set first = false %} {% endif %} {% endfor %}
+        </div>
+
+        <div class="actions">
+          <button class="button">
+            <a href="/">Realizar test nuevamente</a>
+          </button>
+          <button onclick="window.print()" class="button">
+            Guardar resultados
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¡Expert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/images/psychology_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-card">
+        <h1>Descubre tu vocación</h1>
+        <form action="/analizar" method="post">
+          <div class="section">
+            <h2>1. Intereses</h2>
+
+            <div class="question-group">
+              <p>
+                ¿Te gusta resolver problemas utilizando lógica y matemáticas?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="logica" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="logica" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Te interesa la tecnología y la programación?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="tecnologia" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tecnologia" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Te gustaría diseñar y optimizar procesos en empresas?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="procesos" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="procesos" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Te apasiona la cocina y la creación de platillos innovadores?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="cocina" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="cocina" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Te interesan los circuitos, la robótica o la automatización?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="robotica" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="robotica" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Te gustaría administrar y optimizar empresas?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="administrar" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="administrar" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Te interesa el desarrollo agrícola con técnicas innovadoras?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="agricola" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="agricola" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Te preocupa el medio ambiente y te gustaría trabajar en su
+                conservación?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="medioambiente" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="medioambiente" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Te gusta el diseño gráfico, la animación o los efectos
+                visuales?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="disenografico" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="disenografico" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Te apasiona diseñar y planificar espacios arquitectónicos?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="arquitectura" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="arquitectura" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>2. Habilidades</h2>
+
+            <div class="question-group">
+              <p>¿Te consideras bueno en matemáticas?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="matematicas" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="matematicas" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Tienes habilidades de liderazgo y gestión de proyectos?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="liderazgo" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="liderazgo" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Tienes habilidades artísticas o de diseño gráfico?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="artistico" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="artistico" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Eres bueno en la resolución de problemas técnicos?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="tecnicos" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="tecnicos" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Disfrutas de la organización y administración de recursos?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="administracion" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="administracion" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Tienes habilidades manuales o te gusta trabajar con
+                herramientas?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="manuales" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="manuales" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Tienes habilidades para la investigación y el análisis de
+                datos?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="investigacion" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="investigacion" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Eres bueno con la creatividad y la innovación?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="creatividad" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="creatividad" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Tienes facilidad para la comunicación y el trabajo en equipo?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="comunicacion" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="comunicacion" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>3. Conocimientos previos</h2>
+
+            <div class="question-group">
+              <p>
+                ¿Tienes conocimientos básicos de programación o lógica
+                computacional?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="programacion" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="programacion" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Has estudiado algo sobre administración, finanzas o negocios?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="finanzas" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="finanzas" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Tienes experiencia o conocimientos en técnicas culinarias?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="culinarias" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="culinarias" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Sabes cómo funcionan los circuitos eléctricos o la electrónica?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="circuitos" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="circuitos" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>¿Tienes conocimientos en agronomía o producción agrícola?</p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="agronomia" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="agronomia" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Has trabajado en proyectos relacionados con el medio ambiente o
+                la sustentabilidad?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="medioambientesustentabilidad"
+                    value="si"
+                  />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="medioambientesustentabilidad"
+                    value="no"
+                  />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Has practicado diseño gráfico, modelado 3D o animación digital?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="modelado3d" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="modelado3d" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+
+            <div class="question-group">
+              <p>
+                ¿Sabes usar software de diseño arquitectónico como AutoCAD o
+                SketchUp?
+              </p>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="arquitectonico" value="si" />
+                  <span class="radio-custom"></span>
+                  Sí
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="arquitectonico" value="no" />
+                  <span class="radio-custom"></span>
+                  No
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Descubrir mi vocación</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
